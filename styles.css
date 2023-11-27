@@ -1,0 +1,389 @@
+/* Fonts imported from google.com */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Global styles */
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography */
+.text {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    transition: color 0.25s ease-in-out;
+    z-index: 5;
+}
+
+.black-text {
+    color: black;
+}
+
+
+
+h1 {
+    font-size: 45pt;
+}
+
+/* Layout */
+main {
+    position: relative;
+    flex: 1;
+}
+
+
+.title {
+    position: relative;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Accordion styles */
+.accordion {
+    width: 65%;
+}
+
+.large-text {
+    font-size: 100pt;
+}
+
+.accordion-header, .accordion-body, .accordion-button {
+    background-color: #212529;
+    transition: all 0.6s ease-in-out;
+}
+
+.accordMidSize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Lists and Lists Items */
+.list-group.list-group-item {
+    background-color: #212529;
+}
+
+.tos ol, .tos ul {
+    background-color: transparent;
+}
+
+.tosList {
+    transition: all 0.5s;
+    background-color: transparent;
+}
+
+.tos {
+    background-color: #212529;
+    width: 90%;
+    flex-direction: column;
+    border-radius: 20%;
+    height: 850px;
+    padding: 50px;
+}
+
+.row {
+    margin-bottom: 50px;
+}
+
+#sidesShow {
+    margin: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slideSize {
+    height: 382px;
+    width: 650px;
+}
+
+
+/* Buttons and Hover Effects */
+.work:hover {
+    transform: translateY(-5px);
+}
+
+.imageButton img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.bigger-onfloat {
+    margin: 50px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black; /* Change as desired */
+    width: 100%;
+    
+}
+
+.services .service-item {
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.services .service-item h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.services ul {
+    padding-left: 20px;
+}
+
+.services ul li {
+    list-style-type: disc;
+}
+
+
+.mediumImage img {
+    width: 100px;
+    height: 100px;
+}
+
+.bigger-onfloat:hover {
+    transform: scale(1.1);
+}
+
+.imageButton:hover img {
+    transform: scale(1.1);
+}
+
+.videoDiv {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.hoverScale {
+    transition: all 0.3s, filter 0.3s;
+    margin-bottom: 20px;
+}
+
+.hoverScale:hover {
+    transform: scale(1.1);
+}
+
+.white {
+    background-color: white;
+}
+
+.backgroundImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+
+}
+
+.roundy {
+    border-radius: 10px;
+}
+
+.outsideMargin {
+    margin: 30px;
+}
+
+.round-circle {
+    border-radius: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.contact-icon {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Horizontal Rule */
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #000;
+}
+
+/* Social Icons */
+#socialIcons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Spacing */
+.space {
+    margin: 300px;
+}
+
+.mini-space-bottom {
+    margin-bottom: 150px;
+}
+
+/* Footer Styles */
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.footHeadContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo img {
+    width: auto;
+    height: 80px;
+}
+
+/* Navigation */
+#navbarNavDropdown {
+    margin-right: 35px;
+    margin-left: auto;
+}
+
+#navbarNavDropdown a {
+    margin: 10px;
+    color: black;
+    transition: color 0.25s ease-in-out;
+}
+
+#navbarNavDropdown a:hover {
+    color: red;
+    transition: color 0.25s ease-in-out;
+}
+
+.active {
+    font-weight: 1000;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link {
+    color: white;
+    transition: all 0.2s;
+}
+
+/* Header and Navigation Scrolling Effects */
+.fullDiv {
+    background-color: #CCCCCC;
+    position: absolute;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 100;
+}
+
+#headerLoad {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#header {
+    display: flex;
+    box-shadow: 0 5px 10px -6px #ffffff;
+}
+
+.scrolled {
+    background-color: #000000;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.scrolled #navbarNavDropdown a {
+    color: white;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar-toggler {
+    background-color: grey;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.navbar-toggler:hover {
+    background-color: red;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.scrolled .navbar-toggler {
+    background-color: white;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.scrolled .navbar-toggler:hover {
+    background-color: purple;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.scrolled #navbarNavDropdown a:hover {
+    color: purple;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Animation */
+.reveal {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+.revealRight {
+    transform: translateX(600px);
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+.revealLeft {
+    transform: translateX(-600px);
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+.col-md-4 {
+    transition: transform 0.15s ease-in-out;
+}
+
+.col-md-4:hover {
+    transform: translateY(-10px) scale(1.1);
+    transition: transform 0.25s ease-in-out;
+}
+
+.reveal.onScreen {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.revealRight.onScreen {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.revealLeft.onScreen {
+    transform: translateX(0);
+    opacity: 1;
+}
